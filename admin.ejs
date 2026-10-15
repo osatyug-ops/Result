@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel - Satta Manager</title>
+</head>
+<body>
+    <h1>Admin Control Panel</h1>
+    <hr>
+    <h3>Add / Update Results for a Date</h3>
+    <form action="/admin/update" method="POST">
+        <label>Date (YYYY-MM-DD):</label>
+        <input type="date" name="date" required /><br><br>
+        
+        <label>Disawar:</label>
+        <input type="text" name="disawar" placeholder="XX" /><br><br>
+        
+        <label>Delhi Bazar:</label>
+        <input type="text" name="delhiBazar" placeholder="XX" /><br><br>
+
+        <label>Shri Ganesh:</label>
+        <input type="text" name="shriGanesh" placeholder="XX" /><br><br>
+
+        <label>Faridabad:</label>
+        <input type="text" name="faridabad" placeholder="XX" /><br><br>
+        
+        <label>Ghaziabad:</label>
+        <input type="text" name="ghaziabad" placeholder="XX" /><br><br>
+        
+        <label>Gali:</label>
+        <input type="text" name="gali" placeholder="XX" /><br><br>
+        
+        <button type="submit">Save / Update Result</button>
+    </form>
+</body>
+</html>
