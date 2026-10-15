@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Satta King Fast Result & Record Chart</title>
+</head>
+<body>
+    <header>
+        <h1>Satta King Fast Live Result</h1>
+    </header>
+    <main>
+        <section class="live-board">
+            <h2>Today's Live Updates</h2>
+            <div class="card">
+                <h3>Disawar: <span><%= latest.disawar %></span></h3>
+                <h3>Faridabad: <span><%= latest.faridabad %></span></h3>
+                <h3>Ghaziabad: <span><%= latest.ghaziabad %></span></h3>
+                <h3>Gali: <span><%= latest.gali %></span></h3>
+            </div>
+        </section>
+
+        <section class="history-table">
+            <h2>Recent Records</h2>
+            <table border="1">
+                <tr>
+                    <th>Date</th>
+                    <th>Disawar</th>
+                    <th>Faridabad</th>
+                    <th>Ghaziabad</th>
+                    <th>Gali</th>
+                </tr>
+                <% history.forEach(row => { %>
+                    <tr>
+                        <td><%= row.date %></td>
+                        <td><%= row.disawar %></td>
+                        <td><%= row.faridabad %></td>
+                        <td><%= row.ghaziabad %></td>
+                        <td><%= row.gali %></td>
+                    </tr>
+                <% }) %>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
